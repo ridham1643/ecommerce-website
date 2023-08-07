@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="style1.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <img class="bi bi-shop" src="image/shop.svg" alt="" height="25px">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-dark" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#collection">Collections</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#special">Selection</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#offers">Offers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#blogs">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">About Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+          <header id="header" class="carousel slide" data-bs-ride="carousel"> 
+            <div class="container h-100 d-flex align-items-center carousel-inner">
+              <div class="text-center carousel-item active">
+                <h2 class="text-white text-capitalize">best collection</h2>
+                <h1 class="text-uppercase text-white fw-bold py-2">new arrival</h1>
+                <a href="#" class="btn mt-3 text-uppercase">shop now</a>
+              </div>
+              <div class="text-center carousel-item ">
+                <h2 class="text-white text-capitalize">best price & offer</h2>
+                <h1 class="text-uppercase text-white fw-bold py-2">new season</h1>
+                <a href="#" class="btn mt-3 text-uppercase">buy now</a>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button"
+            data-bs-target="#header" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button"
+            data-bs-target="#header" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </header>
+          <section id="collection" class="">
+            <div class="container">
+              <div class="title text-center">
+                <h2 class="position-relative d-inline-block">New Collections</h2>
+              </div>
+              <div class="row">
+                <div class="d-flex flex-wrap justify-content-center filter-button-group">
+                  <button  type="button" class="btn m-2 text-dark active-filter-btn" data-filter = "*">All</button>
+                  <button  type="button" class="btn m-2 text-dark" data-filter = ".best">Best Seller</button>
+                  <button  type="button" class="btn m-2 text-dark" data-filter = ".feat">Featured</button>
+                  <button  type="button" class="btn m-2 text-dark" data-filter = ".new">New Arrival</button>
+                </div>
+                <div class = "collection-list mt-4 row gx-0 gy-3">
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                      <div class = "collection-img position-relative">
+                          <img src = "image/gray_shirt.png" class = "w-100">
+                          <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                      </div>
+                      <div class = "text-center">
+                          <p class = "text-capitalize my-1">gray shirt</p>
+                          <span class = "fw-bold">$ 45.50</span>
+                      </div>
+                  </div>
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                    <div class = "collection-img position-relative">
+                        <img src = "image/pant_girl.png" class = "w-100">
+                        <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize my-1">Jeans Pant</p>
+                        <span class = "fw-bold">$ 54.50</span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                    <div class = "collection-img position-relative">
+                        <img src = "image/polo-shirt.png" class = "w-100">
+                        <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize my-1">Polo Shirt</p>
+                        <span class = "fw-bold">$ 30.00</span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                    <div class = "collection-img position-relative">
+                        <img src = "image/shirt-girl.png" class = "w-100">
+                        <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize my-1">Shirt</p>
+                        <span class = "fw-bold">$ 25.50</span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                    <div class = "collection-img position-relative">
+                        <img src = "image/t-shirt_men.png" class = "w-100">
+                        <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize my-1">Tshirt Men</p>
+                        <span class = "fw-bold">$ 35.00</span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                    <div class = "collection-img position-relative">
+                        <img src = "image/tunic-shirt_girl.png" class = "w-100">
+                        <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize my-1">Tunic Shirt</p>
+                        <span class = "fw-bold">$ 27.50</span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                    <div class = "collection-img position-relative">
+                        <img src = "image/undershirt.png" class = "w-100">
+                        <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize my-1">Undershirt</p>
+                        <span class = "fw-bold">$ 15.00</span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                    <div class = "collection-img position-relative">
+                        <img src = "image/western-shirt.png" class = "w-100">
+                        <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize my-1">western-shirt</p>
+                        <span class = "fw-bold">$ 25.50</span>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+          </div>
+        </section>
+        <section id = "special" class = "py-5">
+          <div class = "container">
+              <div class = "title text-center py-5">
+                  <h2 class = "position-relative d-inline-block">Special Selection</h2>
+              </div>
+  
+              <div class = "special-list row g-0">
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                      <div class = "special-img position-relative overflow-hidden">
+                          <img src = "image/special_product_1.jpg" class = "w-100">
+                          <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                              <i class = "fas fa-heart"></i>
+                          </span>
+                      </div>
+                      <div class = "text-center">
+                          <p class = "text-capitalize mt-3 mb-1">gray shirt</p>
+                          <span class = "fw-bold d-block">$ 45.50</span>
+                          <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                      </div>
+                  </div>
+  
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                      <div class = "special-img position-relative overflow-hidden">
+                          <img src = "image/special_product_2.jpg" class = "w-100">
+                          <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                              <i class = "fas fa-heart"></i>
+                          </span>
+                      </div>
+                      <div class = "text-center">
+                          <p class = "text-capitalize mt-3 mb-1">gray shirt</p>
+                          <span class = "fw-bold d-block">$ 45.50</span>
+                          <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                      </div>
+                  </div>
+  
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                      <div class = "special-img position-relative overflow-hidden">
+                          <img src = "image/special_product_3.jpg" class = "w-100">
+                          <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                              <i class = "fas fa-heart"></i>
+                          </span>
+                      </div>
+                      <div class = "text-center">
+                          <p class = "text-capitalize mt-3 mb-1">gray shirt</p>
+                          <span class = "fw-bold d-block">$ 45.50</span>
+                          <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                      </div>
+                  </div>
+  
+                  <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                      <div class = "special-img position-relative overflow-hidden">
+                          <img src = "image/special_product_4.jpg" class = "w-100">
+                          <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                              <i class = "fas fa-heart"></i>
+                          </span>
+                      </div>
+                      <div class = "text-center">
+                          <p class = "text-capitalize mt-3 mb-1">gray shirt</p>
+                          <span class = "fw-bold d-block">$ 45.50</span>
+                          <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section id = "offers" class = "py-5">
+        <div class = "container">
+            <div class = "row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
+                <div class = "offers-content">
+                    <span class = "text-white">Discount Up To 40%</span>
+                    <h2 class = "mt-2 mb-4 text-white">Grand Sale Offer!</h2>
+                    <a href = "#" class = "btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id = "blogs" class = "py-5">
+      <div class = "container">
+          <div class = "title text-center py-5">
+              <h2 class = "position-relative d-inline-block">Our Latest Blog</h2>
+          </div>
+
+          <div class = "row g-3">
+              <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                  <img src = "image/blog_1.jpg" alt = "">
+                  <div class = "card-body px-0">
+                      <h4 class = "card-title">Payment via card and UPI</h4>
+                      <p class = "card-text mt-3 text-muted">Electronic payments and e-payments systems are highly beneficial to both businesses and their suppliers. In the context of accounts payable, e-payments are a win-win in that they reduce costs, improve relationships, increase visibility and provide enhanced security when compared to traditional checks.</p>
+                      <p class = "card-text">
+                          <small class = "text-muted">
+                              <span class = "fw-bold">Author: </span>Jagga Jasus
+                          </small>
+                      </p>
+                      <a href = "#" class = "btn">Read More</a>
+                  </div>
+              </div>
+
+              <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                  <img src = "image/blog_2.jpg" alt = "">
+                  <div class = "card-body px-0">
+                      <h4 class = "card-title">Add everything in cart</h4>
+                      <p class = "card-text mt-3 text-muted">Online shopping cart abandonment is epidemic. Depending on your source, the time of year and the particular website, abandonment rates generally range from 60% to 80%.</p>
+                      <p class = "card-text">
+                          <small class = "text-muted">
+                              <span class = "fw-bold">Author: </span>surma bhopali
+                          </small>
+                      </p>
+                      <a href = "#" class = "btn">Read More</a>
+                  </div>
+              </div>
+
+              <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                  <img src = "image/blog_3.jpg" alt = "">
+                  <div class = "card-body px-0">
+                      <h4 class = "card-title">Online shopping pros and cons</h4>
+                      <p class = "card-text mt-3 text-muted">Online shopping is more popular today than ever before. A report from the U.S. Census Bureau found that in the first quarter of 2022, an estimated $250 billion was spent in retail e-commerce sales.1
+                        U.S. Census Bureau.
+                        
+                         In the second quarter of 2011, for comparison, retail e-commerce sales were $47.5 billion.2</p>
+                      <p class = "card-text">
+                          <small class = "text-muted">
+                              <span class = "fw-bold">Author: </span>gabbar sing
+                          </small>
+                      </p>
+                      <a href = "#" class = "btn">Read More</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section id = "about" class = "py-5">
+      <div class = "container">
+          <div class = "row gy-lg-5 align-items-center">
+              <div class = "col-lg-6 order-lg-1 text-center text-lg-start">
+                  <div class = "title pt-3 pb-5">
+                      <h2 class = "position-relative d-inline-block ms-4">About Us</h2>
+                  </div>
+                  <p class = "lead text-muted">We provide everything at GLANCE</p>
+                  <p>Although our business has evolved over the years, one constant is customers desire for lower prices, better selection, and convenient services.</p>
+              </div>
+              <div class = "col-lg-6 order-lg-0">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235013.74843128587!2d72.41493016192405!3d23.020474100230842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1691126761193!5m2!1sen!2sin" width="100%" height="300px" style="border:2px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          </div>
+      </div>
+    </section>
+    <footer>
+      &copy Copyright Ridham Patel All Right Reserved
+    </footer>
+        <script src="script.js"></script>
+        <script src ="code.jquery.com_jquery-3.7.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
